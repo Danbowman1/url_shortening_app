@@ -4,13 +4,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    font-weight: 500;
 }
 
 :root {
     --primaryBtn: hsl(180, 66%, 49%);
     --primaryPurple: hsl(257, 27%, 26%);
     --error: hsl(0, 87%, 67%);
-    --lightGray:  hsl(0, 0%, 75%);
+    --lightGray:  hsla(0, 0%, 89%, 0.722);
     --darkGray: hsl(257, 7%, 63%);
     --lightBlack: hsl(255, 11%, 22%);
     --black: hsl(260, 8%, 14%);
@@ -52,4 +53,91 @@ h1 {
     border: none;
     background-color: var(--primaryBtn);
     color: #ffffff;
+}
+
+.white-space {
+    height: 170px;
+}
+
+.input-container {
+    width: 340px; 
+    height: 200px;
+    margin: 0 auto;
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+    border-radius: 10px;
+    background-color: var(--primaryPurple);
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 85px bottom 55px;
+    background-size: contain;
+}
+
+.bottom-container {
+    position: relative;
+    background-color: var(--lightGray);
+}
+
+input {
+    padding: 10px 16px;
+}
+
+.shorten-btn {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primaryBtn);
+    font-weight: 500;
+    color: #fff;
+}
+
+.links-container {
+    width: 340px;
+    height: 175px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 100px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid var(--lightGray);
+}
+
+.shorten-link {
+    color: var(--primaryBtn);
+}
+
+.copy-btn {
+    padding: 4px;
+    background-color: var(--primaryBtn);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+.text-area {
+    padding: 26px;
+    text-align: center;
+}
+
+.text-area h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.text-area p {
+    color: var(--darkGray);
 }

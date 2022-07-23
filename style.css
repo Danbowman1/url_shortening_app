@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
@@ -15,3 +16,40 @@
     --black: hsl(260, 8%, 14%);
 }
 
+nav {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-container img {
+    width: 100%;
+}
+
+.hero-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-container p {
+    margin: 10px 0 26px 0;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--darkGray);
+}
+
+.round-btn {
+    padding: 14px 40px;
+    font-weight: 500;
+    border-radius: 30px;
+    letter-spacing: .8px;
+    border: none;
+    background-color: var(--primaryBtn);
+    color: #ffffff;
+}

@@ -7,6 +7,10 @@
     font-weight: 500;
 }
 
+button {
+    cursor: pointer;
+}
+
 :root {
     --primaryBtn: hsl(180, 66%, 49%);
     --primaryPurple: hsl(257, 27%, 26%);
@@ -139,9 +143,6 @@ hr {
     font-weight: 700;
 }
 
-.links-container:nth-child(even) .copy-btn {
-    background-color: var(--primaryPurple);
-}
 
 .text-area {
     margin-bottom: 60px;

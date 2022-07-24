@@ -148,7 +148,7 @@ hr {
 
 .details-box {
     width: 100%;
-    padding: 32px;
+    padding: 20px 32px ;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 6px;
@@ -164,8 +164,8 @@ hr {
     background-color: var(--primaryPurple);
     border-radius: 50%;
     position: relative;
-    left: 102px;
-    bottom: 65px;
+    left: 92px;
+    bottom: 58px;
 }
 
 .circle-img img {
@@ -185,6 +185,7 @@ hr {
 .details-box p {
     text-align: center;
     position: relative;
+    font-size: 16px;
     bottom: 18px;
     color: var(--darkGray);
 }
@@ -194,4 +195,20 @@ hr {
     height: 66px;
     margin: 0 auto;
     background-color: var(--primaryBtn);
+}
+
+.get-started-container {
+    padding: 86px 30px;
+    text-align: center;
+    background-image: url(images/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primaryPurple);
+}
+
+.get-started-container h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 60px;
 }

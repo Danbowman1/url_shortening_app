@@ -155,6 +155,10 @@ hr {
     word-wrap: break-word;
 }
 
+.details-box:last-child {
+    margin-bottom: 60px;
+}
+
 .circle-img {
     width: 75px;
     height: 75px;
@@ -211,4 +215,42 @@ hr {
     color: #fff;
     font-weight: 700;
     line-height: 60px;
+}
+
+.footer-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--black);
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-sections {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-sections p {
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.footer-sections a {
+    color: var(--lightGray);
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.social-icons {
+    width: 160px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
 }

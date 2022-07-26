@@ -1,6 +1,6 @@
-let url = document.getElementById('url-input')
+const url = document.getElementById('url-input')
 const submitBtn = document.getElementById('shorten-btn')
-let links = document.getElementById('links')
+const links = document.getElementById('links')
 
 
 submitBtn.addEventListener('click', getValue)
@@ -8,7 +8,17 @@ submitBtn.addEventListener('click', getValue)
 
 function getValue(e) {
     e.preventDefault()
-    let inputValue = url.value
+    const inputValue = url.value
+    
+    const errorText = document.querySelector('#error-text')
+
+    if(!inputValue) {
+        url.classList.add('error')
+        errorText.style.display = 'block'
+    } else {
+        input.classList.remove('error')
+        errorText.style.display = 'none'
+    }
     
     fetch(`https://api.shrtco.de/v2/shorten?url=${inputValue}`)
     .then(res => {

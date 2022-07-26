@@ -91,6 +91,24 @@ h1 {
 
 input {
     padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.error {
+    border: 3px solid var(--error);
+}
+
+.error::placeholder {
+    color: var(--error);
+    opacity: 50%;
+}
+
+#error-text {
+    margin-top: 6px;
+    color: var(--error);
+    font-size: 14px;
+    font-style: italic;
+    display: none;
 }
 
 .shorten-btn {
